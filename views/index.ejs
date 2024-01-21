@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Random r/<%=subreddit%> Meme Generator</h1>
+    <div class="contact-me">
+
+    </div>
+    <div class = 'contact-me'>
+        <a class="btn" href="https://github.com/TX-X-XT">Github</a>
+    </div>
+    <form action="/" method="GET" class="meme-form">
+        <div class="dropdown">
+            <label for="subreddit">Choose A Subreddit:</label>
+            <div class="dropdown-select">
+                <select name="subreddit" id="subreddit">
+                    <option value="wholesomememes">Select The Value</option>
+                    <option value="wholesomememes">r/Wholesome Memes</option>
+                    <option value="memes">r/Memes</option>
+                    <option value="dankmemes">r/Dank Memes</option>
+                    <option value="funny">r/Funny</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="button">Generate New One</button>
+    </form>
+    <div class="img">
+        <img src="<%= img %>" alt="random meme">
+    </div>
+    <div class="link">
+        <h3>Reddit Post Link: <a href="<%= postLink %>"><%= postLink %></a></h3>
+    </div>
+</div>
+</body>
+</html>
